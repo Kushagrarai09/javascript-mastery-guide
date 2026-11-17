@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An interactive JavaScript mastery course with 15 chapters, examples, quizzes, assignments and a browser playground.">
+  <meta name="theme-color" content="#101827">
+  <title>JavaScript Mastery — Interactive Study Guide</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./content.js" defer></script>
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="./" aria-label="JavaScript Mastery home">
+        <span class="brand-mark">JS</span>
+        <span><strong>JavaScript Mastery</strong><small>Complete interactive learning platform</small></span>
+      </a>
+      <div class="sidebar-stats">
+        <div><strong id="chapter-count">15</strong><span>Chapters</span></div>
+        <div><strong id="topic-count">89</strong><span>Learning sections</span></div>
+        <div><strong id="quiz-count">45</strong><span>Quiz questions</span></div>
+      </div>
+      <label class="search-box"><span aria-hidden="true">⌕</span><input id="search-input" type="search" placeholder="Search JavaScript..." autocomplete="off"><kbd>⌘ K</kbd></label>
+      <nav class="chapter-nav" id="chapter-nav" aria-label="Course chapters"></nav>
+      <div class="sidebar-bottom">
+        <div class="progress-label"><span>Your progress</span><strong id="progress-text">0%</strong></div>
+        <div class="progress-track"><span id="progress-bar"></span></div>
+        <button class="theme-toggle" id="theme-toggle" type="button">☾ <span>Toggle theme</span></button>
+      </div>
+    </aside>
+    <main class="main-content">
+      <header class="topbar">
+        <button class="mobile-menu" id="mobile-menu" aria-label="Toggle navigation" type="button">☰</button>
+        <div class="breadcrumb">Learning path <span>/</span> <strong id="breadcrumb-current">Introduction</strong></div>
+        <div class="top-actions"><span class="course-pill">● Beginner to advanced</span><button id="reset-progress" class="text-button" type="button">Reset progress</button></div>
+      </header>
+      <section class="hero" id="hero">
+        <div class="eyebrow">YOUR JAVASCRIPT JOURNEY</div>
+        <h1>Become confident with <span>JavaScript.</span></h1>
+        <p>Learn the language of the web through structured lessons, practical examples, quick quizzes and hands-on coding.</p>
+        <div class="hero-meta"><span>15 chapters</span><span>89 learning sections</span><span>45 quiz questions</span></div>
+      </section>
+      <div class="content-layout">
+        <section class="lesson-area" id="lesson-area" aria-live="polite"></section>
+        <aside class="lesson-aside" id="lesson-aside">
+          <div class="aside-card"><h3>In this chapter</h3><div id="chapter-outline"></div></div>
+          <div class="aside-card"><h3>Learning checklist</h3><p>Mark a chapter complete after studying its concepts and trying the examples.</p><button class="primary-button full-width" id="complete-chapter" type="button">Mark chapter complete</button></div>
+        </aside>
+      </div>
+      <footer class="footer"><span>JavaScript Mastery · Learn by understanding, then building.</span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer">MDN JavaScript reference ↗</a></footer>
+    </main>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
