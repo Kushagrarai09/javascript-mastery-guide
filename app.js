@@ -72,7 +72,7 @@
         const send=(...args)=>parent.postMessage({source:'js-mastery-playground',text:args.map(v=>{try{return typeof v==='string'?v:JSON.stringify(v)}catch(e){return String(v)}}).join(' ')},'*');
         console.log=send; console.error=(...a)=>send('Error:',...a); console.warn=(...a)=>send('Warning:',...a);
         window.onerror=(message)=>send('Error:',message);
-        try { ${code.replace(/<\\/script/gi, "<\\\\/script")} } catch(error) { send('Error:',error.message); }
+        try { ${code.replaceAll("</script", "<\\/script") } catch(error) { send('Error:',error.message); }
       <\\/script>`;
       const output = $("#playground-output"); output.textContent = "Running…";
       const listener = event => {
