@@ -32,7 +32,7 @@
     $("#quiz-count").textContent = data.quiz.length;
     document.querySelectorAll(".hero-meta span")[0].textContent = data.chapters.length + " chapters";
     document.querySelectorAll(".hero-meta span")[1].textContent = data.chapters.reduce((sum, ch) => sum + ch.topics.length, 0) + " learning sections";
-    document.querySelectorAll(".hero-meta span")[2].textContent = data.quiz.length + " MCQ questions";
+    document.querySelectorAll(".hero-meta span")[2].textContent = data.quiz.length + " Knowledge Check questions";
   }
   function save() { localStorage.setItem("js-mastery-completed", JSON.stringify([...state.completed])); progress(); }
 
@@ -92,13 +92,14 @@
     lesson.innerHTML = `<div class="chapter-kicker">CHAPTER ${String(state.chapter + 1).padStart(2, "0")} / ${data.chapters.length}</div>
       <h1 class="lesson-title">${escapeHTML(chapter.title)}</h1><p class="lesson-intro">${escapeHTML(chapter.intro)}</p>
       ${chapter.topics.map(renderTopic).join("")}${renderPlayground()}
-      <div class="chapter-practice-promo"><div><span class="chapter-kicker">READY TO TEST YOURSELF?</span><h2>Practice MCQs separately</h2><p>Keep your lesson focused. Open the dedicated practice area to work through the complete JavaScript question bank.</p></div><button class="primary-button" id="open-mcq-from-chapter" type="button">Go to MCQ Practice →</button></div>
+      ${state.chapter === data.chapters.length - 1 ? '<div class="chapter-practice-promo"><div><span class="chapter-kicker">YOU HAVE REACHED THE END</span><h2>Ready for the Knowledge Check?</h2><p>Test your understanding across the full JavaScript curriculum in one dedicated practice area.</p></div><button class="primary-button" id="open-final-knowledge-check" type="button">Start Knowledge Check →</button></div>' : ''}
       <div class="chapter-navigation"><button class="secondary-button" id="previous-chapter" ${state.chapter === 0 ? "disabled" : ""}>← Previous</button><button class="primary-button" id="next-chapter" ${state.chapter === data.chapters.length - 1 ? "disabled" : ""}>Next chapter →</button></div>`;
     $("#complete-chapter").textContent = state.completed.has(state.chapter) ? "✓ Chapter completed" : "Mark chapter complete";
     $("#complete-chapter").onclick = () => { state.completed.add(state.chapter); save(); renderNav(); $("#complete-chapter").textContent = "✓ Chapter completed"; toast("Chapter marked complete"); };
+    const finalCheckButton = $("#open-final-knowledge-check");
+    if (finalCheckButton) finalCheckButton.addEventListener("click", openPractice);
     $("#previous-chapter").addEventListener("click", () => selectChapter(state.chapter - 1));
     $("#next-chapter").addEventListener("click", () => selectChapter(state.chapter + 1));
-    $("#open-mcq-from-chapter").addEventListener("click", openPractice);
     bindPlayground(); renderNav();
   }
 
@@ -112,7 +113,7 @@
   }
   function renderPractice() {
     state.view = "practice"; lesson.hidden = true; practice.hidden = false;
-    $("#breadcrumb-current").textContent = "MCQ Practice";
+    $("#breadcrumb-current").textContent = "Knowledge Check";
     outline.innerHTML = '<p class="aside-muted">Work through questions, submit your answers, and review explanations. Your lesson completion progress is separate from quiz scores.</p>';
     $("#complete-chapter").textContent = "Back to lessons";
     $("#complete-chapter").onclick = () => selectChapter(state.chapter);
@@ -120,8 +121,8 @@
     const submitted = practiceState.submitted;
     const score = questions.reduce((sum, q, i) => sum + (practiceState.answers[i] === q.a ? 1 : 0), 0);
     practice.innerHTML = `
-      <div class="chapter-kicker">DEDICATED PRACTICE SPACE</div>
-      <h1 class="lesson-title">JavaScript MCQ Practice</h1>
+      <div class="chapter-kicker">FINAL CHAPTER KNOWLEDGE CHECK</div>
+      <h1 class="lesson-title">JavaScript Knowledge Check</h1>
       <p class="lesson-intro">Practice JavaScript concepts without interrupting your chapter lessons. Choose the full question bank or a shuffled 10-question round.</p>
       <div class="practice-summary">
         <div><strong>${data.quiz.length}</strong><span>Total questions</span></div>
