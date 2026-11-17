@@ -2,148 +2,193 @@
 
 > **Live website:** [https://kushagrarai09.github.io/javascript-mastery-guide/](https://kushagrarai09.github.io/javascript-mastery-guide/)
 
-A responsive, browser-based JavaScript learning platform built with **HTML5, CSS3, and Vanilla JavaScript**. It takes learners from JavaScript fundamentals through browser APIs, asynchronous programming, debugging, and practical development habits using structured chapters, code examples, knowledge checks, and an in-browser playground.
+A beginner-to-advanced, browser-based JavaScript learning platform built with **HTML, CSS and Vanilla JavaScript**. The course is organised into 15 chapters and 80 lesson sections. Each chapter combines conceptual explanations, worked code examples, guided reading prompts, practical assignments and an in-browser coding playground.
 
-## At a glance
+**This version is intentionally quiz-free.** MCQ questions, per-chapter quizzes and the separate Knowledge Check section are not part of the learning experience. The emphasis is on understanding concepts, tracing code, experimenting and building.
 
-| Learning resource | Included |
-| --- | ---: |
-| Structured chapters | 16 |
-| Lesson topics | 80 |
-| Worked example question bank | 45 |
-| Questions in each knowledge check | 10 |
-| External dependencies / build tools | None |
+## Course overview
 
-## Features
+| Resource | Included |
+|---|---:|
+| Chapters | 15 |
+| Lesson sections | 80 |
+| Lessons in Chapters 1–14 | 5 per chapter |
+| Lessons in Chapter 15 | 10 |
+| MCQ / Knowledge Check quizzes | None |
+| Front-end technologies | HTML, CSS, Vanilla JavaScript |
 
-### Structured JavaScript curriculum
-- 16 chapters covering beginner, intermediate, and practical JavaScript concepts.
-- 5 lesson topics in each chapter, with explanations, code examples, and key reminders.
-- Chapter navigation and a chapter outline for jumping between topics.
-- Previous/next chapter navigation.
-- Chapter completion checklist and an overall progress indicator.
+## What the platform includes
 
-### Interactive knowledge checks
-- A bank of 45 multiple-choice questions.
-- A dedicated **Knowledge Check** area, separate from chapter lessons.
-- Choose the complete 45-question bank or a shuffled 10-question practice round.
-- Select answers, submit the set, receive a score and percentage, and review explanations for every question.
-- Start a fresh practice set and retry questions without disturbing chapter completion progress.
+### 1. Structured chapter-based learning
+- A guided 15-chapter learning path, ordered from JavaScript fundamentals to practical development.
+- 80 lesson sections with topic titles, explanations, code examples and key reminders.
+- A chapter introduction and learning objectives to set context before studying.
+- Chapter navigation with previous and next controls.
+- A chapter outline for jumping directly to a lesson section.
 
-### Browser-based JavaScript playground
-- Write and run JavaScript directly in the learning page.
-- View `console.log()`, warning, and error output in the result panel.
-- Clear the output and experiment with the examples.
-- Code executes in a sandboxed iframe rather than the main learning page.
+### 2. In-depth lesson presentation
+Each lesson is presented with a consistent learning sequence:
+- **Core concept:** an explanation of the topic and its role in JavaScript.
+- **Worked JavaScript example:** source code illustrating the concept.
+- **How to think about it:** guidance for reasoning about inputs, operations and results.
+- **Practical application:** examples of where the concept is useful in real applications.
+- **Common mistakes:** reminders to check assumptions, types, execution order and edge cases.
+- **Key takeaway:** the central idea to remember.
+- **Code-reading checklist:** prompts to identify inputs, operations, expected output and edge cases.
 
-### Search and navigation
-- Search lesson titles, explanations, examples, and key reminders.
-- Jump from search results directly to the matching chapter and topic.
-- Responsive sidebar navigation, including a mobile menu.
+### 3. Chapter assignments
+Every chapter includes a practical assignment encouraging learners to:
+- Combine at least two concepts from the chapter.
+- Build a working solution rather than copy an example.
+- Use meaningful names and focused functions.
+- Test at least three inputs, including an edge case.
+- Refactor the solution after the first working version.
 
-### Personal learning experience
-- Light and dark themes.
-- Chapter completion and learning progress saved in browser `localStorage`.
-- Progress remains available in the same browser and origin until its site data is cleared or progress is reset.
-- Responsive layout for desktop, tablet, and mobile screens.
-- A link to the [MDN JavaScript reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript).
+### 4. Browser-based JavaScript playground
+- Write and run JavaScript from inside the course.
+- Use `console.log()`, `console.warn()` and `console.error()` to inspect output.
+- Clear the output and experiment with your own code.
+- Code executes in a sandboxed iframe, separate from the main learning page.
 
-## Curriculum
+### 5. Search and navigation
+- Search lesson names, explanations, examples and reminders.
+- Open a matching chapter and jump to the relevant lesson.
+- Use the sidebar chapter list to move through the course.
+- Use the mobile navigation on smaller screens.
 
-The guide contains the following 16 chapters:
+### 6. Learning progress and preferences
+- Mark chapters as completed.
+- View an overall chapter completion percentage.
+- Save chapter completion state in browser `localStorage`.
+- Save the selected light/dark theme in `localStorage`.
+- Reset saved chapter progress from the interface.
 
-1. **Getting Started with JavaScript** — what JavaScript is, runtimes, adding scripts, and your first program.
-2. **Variables and Data Types** — declarations, primitive and reference values, types, conversion, and template literals.
-3. **Operators and Expressions** — arithmetic, comparison, logical, assignment, and precedence.
-4. **Conditional Statements** — if/else, switch, truthy and falsy values, and choosing conditions.
-5. **Loops and Iteration** — while, do...while, for, for...of, for...in, break, and continue.
-6. **Functions** — declarations, expressions, parameters, return values, arrow functions, rest/spread, scope, closures, and callbacks.
-7. **Arrays and Array Methods** — creating and updating arrays, map, filter, reduce, searching, sorting, and copying.
-8. **Objects and Object-Oriented JavaScript** — properties, methods, this, destructuring, prototypes, classes, and composition.
-9. **Strings, Numbers, Math and Dates** — string operations, numeric conversion, Math, Date, and international formatting.
-10. **DOM Manipulation** — the DOM, selecting elements, changing content and attributes, creating elements, and traversal.
-11. **Events and Forms** — event listeners, event objects, propagation, delegation, form validation, keyboard use, and accessibility.
-12. **Asynchronous JavaScript** — synchronous and asynchronous execution, callbacks, promises, async/await, and the event loop.
-13. **Browser APIs and Web Storage** — window APIs, LocalStorage, SessionStorage, JSON, Fetch, timers, and clipboard.
-14. **Modules and Modern JavaScript** — modules, imports/exports, optional chaining, nullish coalescing, Map, Set, and modern syntax.
-15. **Error Handling and Debugging** — syntax, runtime, and logic errors; try/catch/finally; custom errors; DevTools; and defensive programming.
-16. **JavaScript Projects and Best Practices** — code organization, immutability, testing fundamentals, performance basics, and project practice.
+Progress is stored locally in the current browser profile and site origin. It is not associated with an account and does not sync across devices.
 
-## Tech stack
+### 7. Responsive interface and reference
+- Responsive desktop, tablet and mobile layouts.
+- Light and dark display themes.
+- Links to the [MDN JavaScript reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript).
 
-- **HTML5** — page structure and semantic content.
-- **CSS3** — responsive layout, component styling, and light/dark themes.
-- **Vanilla JavaScript (ES6+)** — chapter rendering, navigation, search, dedicated Knowledge Check practice, progress, theme preferences, and playground behavior.
-- **Browser APIs** — LocalStorage, DOM, events, and sandboxed iframe execution.
+## Complete curriculum
 
-No framework, package manager, server, or compilation step is required. The site is a static front-end project.
+The current source contains the following 15 chapters and 80 lesson sections.
 
-## Project structure
+| # | Chapter | Lesson sections |
+|---:|---|---:|
+| 1 | Getting Started with JavaScript | 5 |
+| 2 | Variables and Data Types | 5 |
+| 3 | Operators and Expressions | 5 |
+| 4 | Conditional Statements | 5 |
+| 5 | Loops and Iteration | 5 |
+| 6 | Functions | 5 |
+| 7 | Arrays and Array Methods | 5 |
+| 8 | Objects and Object-Oriented JavaScript | 5 |
+| 9 | Strings, Numbers, Math and Dates | 5 |
+| 10 | DOM Manipulation | 5 |
+| 11 | Events and Forms | 5 |
+| 12 | Asynchronous JavaScript | 5 |
+| 13 | Browser APIs and Web Storage | 5 |
+| 14 | Modules and Modern JavaScript | 5 |
+| 15 | Error Handling, Debugging, Projects and Best Practices | 10 |
+| | **Total** | **80** |
+
+### Topics covered across the course
+
+The curriculum moves through the following areas:
+
+- JavaScript, runtimes, engines, browser developer tools and script setup.
+- Variables, primitive data types, type checking, type conversion and operators.
+- Conditional logic, loops, functions, parameters, return values, scope and callbacks.
+- Arrays, array methods, objects, object-oriented JavaScript, classes, prototypes and data structures.
+- Strings, numbers, mathematical operations and dates.
+- DOM selection and manipulation, browser events, forms and validation.
+- Asynchronous JavaScript, promises, async/await and the event loop.
+- Browser APIs, web storage, JSON and Fetch.
+- JavaScript modules and modern language features.
+- Error handling, debugging, project structure, best practices and practical project work.
+
+## Technology stack
+
+| Technology | Purpose |
+|---|---|
+| HTML5 | Semantic page structure and application shell |
+| CSS3 | Responsive layout, visual components and themes |
+| Vanilla JavaScript (ES6+) | Chapter rendering, search, navigation, progress and playground |
+| Browser APIs | DOM, events, LocalStorage and sandboxed iframe execution |
+
+This is a static front-end project. It does not require a framework, package manager, backend service, database or compilation step.
+
+## Repository structure
 
 ```text
 javascript-mastery-guide/
 ├── index.html   # Application shell and page structure
-├── styles.css   # Responsive styling, components, and themes
-├── content.js   # Chapter content, lesson topics, and worked-example bank
-├── app.js       # Navigation, search, worked-examplezes, progress, and playground
-└── README.md    # Project documentation
+├── styles.css   # Responsive styling, components and themes
+├── content.js   # Chapter data, lesson explanations and examples
+└── app.js       # Rendering, navigation, search, progress and playground
 ```
 
 ## Run locally
 
-### Option 1: Open the page
+### Option 1 — Open directly
 
-Open `index.html` in a modern browser.
+Open `index.html` in a modern browser with JavaScript enabled.
 
-### Option 2: Start a local static server
+### Option 2 — Use a local static server
 
-From the project directory, run:
+From the repository directory, run:
 
 ```bash
 python -m http.server 8000
 ```
 
-Then open [http://localhost:8000](http://localhost:8000).
+Then visit [http://localhost:8000](http://localhost:8000).
 
-You can also use any other static file server. There is no `npm install` or build command.
+No `npm install`, build command or environment variables are required.
 
 ## Deploy with GitHub Pages
 
-This repository is configured to publish from the `main` branch and the repository root.
+The project is designed to deploy as a static website from the repository root.
 
-To configure or verify the deployment:
+1. Open **Settings → Pages** in this GitHub repository.
+2. Set the source to **Deploy from a branch**.
+3. Select the `main` branch and the `/(root)` folder.
+4. Save the configuration.
+5. Open the **Actions** tab and wait for the Pages workflow to finish.
+6. Visit the published site: [JavaScript Mastery](https://kushagra rai09.github.io/javascript-mastery-guide/).
 
-1. Open the repository's **Settings → Pages**.
-2. Set **Source** to **Deploy from a branch**.
-3. Select **main** as the branch and **/(root)** as the folder.
-4. Save the settings.
-5. Open the **Actions** tab and wait for the Pages deployment workflow to complete.
-6. Visit the live site: [https://kushagrarai09.github.io/javascript-mastery-guide/](https://kushagrarai09.github.io/javascript-mastery-guide/).
+New commits to the configured publishing branch trigger a new deployment.
 
-Every new commit to the configured publishing branch can trigger a new Pages deployment.
+## Suggested learning workflow
 
-## Using the guide
+1. Start with Chapter 1 and follow the chapters in order.
+2. Read the lesson explanation before looking at the code.
+3. Predict what the example will do.
+4. Run it in the playground and inspect the output.
+5. Change one value or statement and run it again.
+6. Complete the chapter assignment using your own implementation.
+7. Test normal inputs and edge cases, then mark the chapter complete.
 
-1. Open the live website or run the project locally.
-2. Choose a chapter from the left navigation.
-3. Read each topic and review its code example and reminder.
-4. Use the search field to find a concept across the lessons.
-5. Complete the knowledge check and review the answer explanations.
-6. Experiment in the JavaScript playground.
-7. Mark the chapter complete to update your saved progress.
+## Project scope and limitations
 
-## Progress and browser data
+- The course is a static, client-side learning application.
+- It does not include login, user accounts, server-side APIs or a database.
+- Chapter progress and theme preference are stored locally in the browser.
+- Progress is not synchronized across browsers or devices.
+- The project deliberately contains no MCQ quiz UI or Knowledge Check question bank.
 
-Chapter completion and the selected theme are stored in the browser using `localStorage`. This data is local to the browser profile and site origin; it is not synchronized to an account or a remote database. Use **Reset progress** in the interface to clear the saved chapter completion state.
+## Contributing
 
-## Browser support
+Contributions that improve explanations, code examples, accessibility, navigation, responsive behavior or playground reliability are welcome.
 
-Use a recent version of a modern browser with JavaScript enabled. The application uses standard browser features including DOM APIs, LocalStorage, and iframe sandboxing.
+For content changes, keep lesson titles, explanations, examples and key reminders aligned in `content.js`. For interface changes, update `app.js`, `index.html` and `styles.css` as appropriate, then test the course locally before publishing.
 
-## Project status
+## Reference
 
-This is a static, client-side educational project. It does not include user accounts, a backend API, cloud-synced progress, or server-side data storage.
+- [MDN — JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
+- [MDN — JavaScript Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)
 
 ---
 
-Made for learning JavaScript through structured lessons, experimentation, and practice.
+Built to help learners understand JavaScript systematically through explanations, code tracing, experimentation and project practice.
