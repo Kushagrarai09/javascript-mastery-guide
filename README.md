@@ -1,6 +1,6 @@
 # JavaScript Mastery — Interactive Study Guide
 
-> **Live website:** [https://kushagra rai09.github.io/javascript-mastery-guide/](https://kushagra rai09.github.io/javascript-mastery-guide/)
+> **Live website:** [https://kushagrarai09.github.io/javascript-mastery-guide/](https://kushagrarai09.github.io/javascript-mastery-guide/)
 
 A responsive, browser-based JavaScript learning platform built with **HTML5, CSS3, and Vanilla JavaScript**. It takes learners from JavaScript fundamentals through browser APIs, asynchronous programming, debugging, and practical development habits using structured chapters, code examples, knowledge checks, and an in-browser playground.
 
@@ -8,8 +8,8 @@ A responsive, browser-based JavaScript learning platform built with **HTML5, CSS
 
 | Learning resource | Included |
 | --- | ---: |
-| Structured chapters | 15 |
-| Lesson topics | 75 |
+| Structured chapters | 16 |
+| Lesson topics | 80 |
 | Quiz question bank | 45 |
 | Questions in each knowledge check | 10 |
 | External dependencies / build tools | None |
@@ -17,7 +17,7 @@ A responsive, browser-based JavaScript learning platform built with **HTML5, CSS
 ## Features
 
 ### Structured JavaScript curriculum
-- 15 chapters covering beginner, intermediate, and practical JavaScript concepts.
+- 16 chapters covering beginner, intermediate, and practical JavaScript concepts.
 - 5 lesson topics in each chapter, with explanations, code examples, and key reminders.
 - Chapter navigation and a chapter outline for jumping between topics.
 - Previous/next chapter navigation.
@@ -48,7 +48,7 @@ A responsive, browser-based JavaScript learning platform built with **HTML5, CSS
 
 ## Curriculum
 
-The guide contains the following 15 chapters:
+The guide contains the following 16 chapters:
 
 1. **Getting Started with JavaScript** — what JavaScript is, runtimes, adding scripts, and your first program.
 2. **Variables and Data Types** — declarations, primitive and reference values, types, conversion, and template literals.
@@ -64,7 +64,8 @@ The guide contains the following 15 chapters:
 12. **Asynchronous JavaScript** — synchronous and asynchronous execution, callbacks, promises, async/await, and the event loop.
 13. **Browser APIs and Web Storage** — window APIs, LocalStorage, SessionStorage, JSON, Fetch, timers, and clipboard.
 14. **Modules and Modern JavaScript** — modules, imports/exports, optional chaining, nullish coalescing, Map, Set, and modern syntax.
-15. **Error Handling and Debugging / JavaScript Projects and Best Practices** — error handling, debugging, defensive programming, code organization, testing, performance, and project practice.
+15. **Error Handling and Debugging** — syntax, runtime, and logic errors; try/catch/finally; custom errors; DevTools; and defensive programming.
+16. **JavaScript Projects and Best Practices** — code organization, immutability, testing fundamentals, performance basics, and project practice.
 
 ## Tech stack
 
@@ -115,7 +116,7 @@ To configure or verify the deployment:
 3. Select **main** as the branch and **/(root)** as the folder.
 4. Save the settings.
 5. Open the **Actions** tab and wait for the Pages deployment workflow to complete.
-6. Visit the live site: [https://kushagra rai09.github.io/javascript-mastery-guide/](https://kushagra rai09.github.io/javascript-mastery-guide/).
+6. Visit the live site: [https://kushagrarai09.github.io/javascript-mastery-guide/](https://kushagrarai09.github.io/javascript-mastery-guide/).
 
 Every new commit to the configured publishing branch can trigger a new Pages deployment.
 
