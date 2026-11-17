@@ -23,6 +23,8 @@
         <div><strong id="quiz-count">45</strong><span>Quiz questions</span></div>
       </div>
       <label class="search-box"><span aria-hidden="true">⌕</span><input id="search-input" type="search" placeholder="Search JavaScript..." autocomplete="off"><kbd>⌘ K</kbd></label>
+      <div class="nav-heading">PRACTICE</div>
+      <button class="chapter-link practice-nav-link" id="mcq-nav" type="button"><span class="num">?</span><span>MCQ Practice <small style="display:block;opacity:.7;margin-top:3px">All questions · Practice mode</small></span></button>
       <nav class="chapter-nav" id="chapter-nav" aria-label="Course chapters"></nav>
       <div class="sidebar-bottom">
         <div class="progress-label"><span>Your progress</span><strong id="progress-text">0%</strong></div>
@@ -44,6 +46,7 @@
       </section>
       <div class="content-layout">
         <section class="lesson-area" id="lesson-area" aria-live="polite"></section>
+        <section class="lesson-area" id="practice-area" aria-live="polite" hidden></section>
         <aside class="lesson-aside" id="lesson-aside">
           <div class="aside-card"><h3>In this chapter</h3><div id="chapter-outline"></div></div>
           <div class="aside-card"><h3>Learning checklist</h3><p>Mark a chapter complete after studying its concepts and trying the examples.</p><button class="primary-button full-width" id="complete-chapter" type="button">Mark chapter complete</button></div>
