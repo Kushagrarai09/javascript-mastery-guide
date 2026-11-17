@@ -25,8 +25,10 @@ A responsive, browser-based JavaScript learning platform built with **HTML5, CSS
 
 ### Interactive knowledge checks
 - A bank of 45 multiple-choice questions.
-- A 10-question knowledge check displayed in the chapter lesson view.
-- Select answers, submit the quiz, see your score, and read explanations for each answer.
+- A dedicated **MCQ Practice** area, separate from chapter lessons.
+- Choose the complete 45-question bank or a shuffled 10-question practice round.
+- Select answers, submit the set, receive a score and percentage, and review explanations for every question.
+- Start a fresh practice set and retry questions without disturbing chapter completion progress.
 
 ### Browser-based JavaScript playground
 - Write and run JavaScript directly in the learning page.
@@ -71,7 +73,7 @@ The guide contains the following 16 chapters:
 
 - **HTML5** — page structure and semantic content.
 - **CSS3** — responsive layout, component styling, and light/dark themes.
-- **Vanilla JavaScript (ES6+)** — chapter rendering, navigation, search, quiz interactions, progress, theme preferences, and playground behavior.
+- **Vanilla JavaScript (ES6+)** — chapter rendering, navigation, search, dedicated MCQ practice, progress, theme preferences, and playground behavior.
 - **Browser APIs** — LocalStorage, DOM, events, and sandboxed iframe execution.
 
 No framework, package manager, server, or compilation step is required. The site is a static front-end project.
