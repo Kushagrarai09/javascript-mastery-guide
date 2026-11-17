@@ -28,3 +28,7 @@
 .score-panel strong{display:block;font-size:30px;color:var(--accent);margin-top:7px}
 .score-panel p{font-size:11px;color:var(--muted);margin:5px 0 0}
 @media(max-width:600px){.practice-summary{gap:7px}.practice-summary div{padding:12px}.practice-summary strong{font-size:19px}.practice-question{padding:15px}.chapter-practice-promo{align-items:flex-start}.practice-submit{align-items:flex-start}}
+
+/* Keep the single Knowledge Check entry visually after the final chapter */
+.knowledge-check-heading{margin-top:8px;border-top:1px solid var(--line);padding-top:15px}
+.practice-nav-link{flex:0 0 auto}
