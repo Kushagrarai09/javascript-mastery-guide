@@ -10,7 +10,7 @@ A responsive, browser-based JavaScript learning platform built with **HTML5, CSS
 | --- | ---: |
 | Structured chapters | 16 |
 | Lesson topics | 80 |
-| Quiz question bank | 45 |
+| Worked example question bank | 45 |
 | Questions in each knowledge check | 10 |
 | External dependencies / build tools | None |
 
@@ -84,8 +84,8 @@ No framework, package manager, server, or compilation step is required. The site
 javascript-mastery-guide/
 ├── index.html   # Application shell and page structure
 ├── styles.css   # Responsive styling, components, and themes
-├── content.js   # Chapter content, lesson topics, and quiz bank
-├── app.js       # Navigation, search, quizzes, progress, and playground
+├── content.js   # Chapter content, lesson topics, and worked-example bank
+├── app.js       # Navigation, search, worked-examplezes, progress, and playground
 └── README.md    # Project documentation
 ```
 
