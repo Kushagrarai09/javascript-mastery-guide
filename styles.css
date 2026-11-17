@@ -32,3 +32,24 @@
 /* Keep the single Knowledge Check entry visually after the final chapter */
 .knowledge-check-heading{margin-top:8px;border-top:1px solid var(--line);padding-top:15px}
 .practice-nav-link{flex:0 0 auto}
+
+/* Structured, accessible lesson layouts */
+.chapter-overview,.chapter-assignment,.code-reading{background:var(--panel);border:1px solid var(--line);border-radius:13px;padding:20px 22px;margin:0 0 18px;box-shadow:var(--shadow)}
+.chapter-overview h2,.chapter-assignment h2,.code-reading h3{font-size:16px;margin:0 0 10px}
+.chapter-overview p,.chapter-assignment p,.code-reading p,.chapter-overview li,.chapter-assignment li,.code-reading li{font-size:12px;line-height:1.85;color:var(--muted)}
+.chapter-overview ul,.chapter-assignment ul,.code-reading ol{padding-left:20px}
+.topic-lead{font-size:13px!important;line-height:1.9!important}
+.topic-detail-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:17px}
+.detail-block{padding:14px;background:var(--bg);border:1px solid var(--line);border-radius:9px}
+.detail-block h3{font-size:12px;margin:0 0 7px}
+.detail-block p{font-size:11px;line-height:1.8;margin:0;color:var(--muted)}
+.detail-highlight{background:var(--accent-soft);border-color:transparent}
+.detail-highlight h3{color:var(--accent)}
+.code-reading{margin-top:12px;padding:16px}
+.code-reading h3{margin-bottom:6px}
+.code-line-count{font-size:10px!important}
+.playground-actions{display:flex;gap:8px;margin-top:10px}
+.playground-output{min-height:55px;white-space:pre-wrap}
+.chapter-assignment{border-left:3px solid var(--accent)}
+.chapter-link small{display:block;opacity:.7;margin-top:3px}
+@media(max-width:600px){.topic-detail-grid{grid-template-columns:1fr}.chapter-overview,.chapter-assignment{padding:16px}}
